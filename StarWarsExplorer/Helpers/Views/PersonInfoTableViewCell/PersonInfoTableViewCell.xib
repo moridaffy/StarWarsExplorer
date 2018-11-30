@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KGk-i7-Jjw" customClass="PersonInfoTableViewCell" customModule="StarWarsExplorer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMH-fw-APJ">
+                        <rect key="frame" x="16" y="11" width="288" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="krk-Pz-MBu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qO2-zA-qri">
+                        <rect key="frame" x="16" y="28" width="288" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="HMH-fw-APJ" secondAttribute="trailing" id="3f1-tu-X7m"/>
+                    <constraint firstItem="qO2-zA-qri" firstAttribute="top" secondItem="HMH-fw-APJ" secondAttribute="bottom" id="CcS-oI-wr6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qO2-zA-qri" secondAttribute="trailing" id="Fqa-bK-tcL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qO2-zA-qri" secondAttribute="bottom" id="HJG-T8-DUL"/>
+                    <constraint firstItem="HMH-fw-APJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="XWa-JM-Ica"/>
+                    <constraint firstItem="HMH-fw-APJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="gWM-Tu-Ov7"/>
+                    <constraint firstItem="qO2-zA-qri" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="vWz-M1-Yx5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentLabel" destination="qO2-zA-qri" id="nzs-Za-55v"/>
+                <outlet property="titleLabel" destination="HMH-fw-APJ" id="M4K-O7-IQC"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="170.91454272863569"/>
+        </tableViewCell>
+    </objects>
+</document>

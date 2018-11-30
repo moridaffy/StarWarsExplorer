@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="PersonTableViewCell" customModule="StarWarsExplorer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="422" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luke Skywalker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFp-Ul-LoU">
+                        <rect key="frame" x="20" y="11" width="382" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="vx5-Ef-OTe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQK-0h-2XW" customClass="CounterView" customModule="StarWarsExplorer" customModuleProvider="target">
+                        <rect key="frame" x="20" y="41" width="89.5" height="35"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0EX-Rl-toI" customClass="CounterView" customModule="StarWarsExplorer" customModuleProvider="target">
+                        <rect key="frame" x="117.5" y="41" width="89.5" height="35"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHG-Wc-Q5d" customClass="CounterView" customModule="StarWarsExplorer" customModuleProvider="target">
+                        <rect key="frame" x="312.5" y="41" width="89.5" height="35"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNh-ez-Iol" customClass="CounterView" customModule="StarWarsExplorer" customModuleProvider="target">
+                        <rect key="frame" x="215" y="41" width="89.5" height="35"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dQK-0h-2XW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0kJ-TP-Qpx"/>
+                    <constraint firstItem="0EX-Rl-toI" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="2Ff-sc-Zxk"/>
+                    <constraint firstItem="YHG-Wc-Q5d" firstAttribute="top" secondItem="AFp-Ul-LoU" secondAttribute="bottom" constant="8" id="2v7-Cd-KWW"/>
+                    <constraint firstItem="AFp-Ul-LoU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="8QL-AH-K3K"/>
+                    <constraint firstItem="dQK-0h-2XW" firstAttribute="top" secondItem="AFp-Ul-LoU" secondAttribute="bottom" constant="8" id="BDd-mQ-yeH"/>
+                    <constraint firstItem="AFp-Ul-LoU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Cwt-U7-6tB"/>
+                    <constraint firstItem="dQK-0h-2XW" firstAttribute="width" secondItem="0EX-Rl-toI" secondAttribute="width" id="DS5-x4-eB9"/>
+                    <constraint firstItem="YHG-Wc-Q5d" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="Rcd-BS-rMY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="AFp-Ul-LoU" secondAttribute="trailing" id="TwG-CK-c4X"/>
+                    <constraint firstItem="0EX-Rl-toI" firstAttribute="leading" secondItem="dQK-0h-2XW" secondAttribute="trailing" constant="8" id="Vs1-wq-pUe"/>
+                    <constraint firstItem="ZNh-ez-Iol" firstAttribute="leading" secondItem="0EX-Rl-toI" secondAttribute="trailing" constant="8" id="d5r-qi-Ncz"/>
+                    <constraint firstItem="YHG-Wc-Q5d" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ecS-iZ-kUZ"/>
+                    <constraint firstItem="ZNh-ez-Iol" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="mrr-aJ-RS7"/>
+                    <constraint firstItem="dQK-0h-2XW" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="qpe-qx-YuA"/>
+                    <constraint firstItem="0EX-Rl-toI" firstAttribute="top" secondItem="AFp-Ul-LoU" secondAttribute="bottom" constant="8" id="rR5-AK-kHu"/>
+                    <constraint firstItem="dQK-0h-2XW" firstAttribute="width" secondItem="YHG-Wc-Q5d" secondAttribute="width" id="sec-4J-PPu"/>
+                    <constraint firstItem="YHG-Wc-Q5d" firstAttribute="leading" secondItem="ZNh-ez-Iol" secondAttribute="trailing" constant="8" id="tRE-D0-K31"/>
+                    <constraint firstItem="ZNh-ez-Iol" firstAttribute="top" secondItem="AFp-Ul-LoU" secondAttribute="bottom" constant="8" id="tyR-CL-gt0"/>
+                    <constraint firstItem="dQK-0h-2XW" firstAttribute="width" secondItem="ZNh-ez-Iol" secondAttribute="width" id="ybk-Ab-3ho"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="filmsCounterView" destination="dQK-0h-2XW" id="0vF-no-QyG"/>
+                <outlet property="nameLabel" destination="AFp-Ul-LoU" id="lXa-e0-Q5O"/>
+                <outlet property="speciesCounterView" destination="0EX-Rl-toI" id="BMh-Z6-saU"/>
+                <outlet property="starshipsCounterView" destination="YHG-Wc-Q5d" id="Vod-h3-2uU"/>
+                <outlet property="vehiclesCounterView" destination="ZNh-ez-Iol" id="Sf8-Uj-1xe"/>
+            </connections>
+            <point key="canvasLocation" x="134.40000000000001" y="80.50974512743629"/>
+        </tableViewCell>
+    </objects>
+</document>
